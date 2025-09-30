@@ -6,10 +6,10 @@ services:
     env_file:
       - .env
     volumes:
-      - "${FOLDERS_APPS}/workspace:/workspace"
-      - "${FOLDERS_APPS}/happy-auth:/root/.happy"
-      - "${FOLDERS_APPS}/claude-config:/root/.claude"
-      # - "${FOLDERS_APPS}/claude-settings.json:/root/.claude/settings.json"
+      - "${FOLDERS_APPS}/happy-claude/workspace:/workspace"
+      - "${FOLDERS_APPS}/happy-claude/happy-auth:/root/.happy"
+      - "${FOLDERS_APPS}/happy-claude/claude-config:/root/.claude"
+      # - "${FOLDERS_APPS}/happy-claude/claude-settings.json:/root/.claude/settings.json"
     working_dir: /workspace
     stdin_open: true
     tty: true
