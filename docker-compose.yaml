@@ -9,10 +9,6 @@ services:
       - "${FOLDERS_APPS}/workspace:/workspace"
       - "${FOLDERS_APPS}/happy-auth:/root/.happy"
       - "${FOLDERS_APPS}/claude-config:/root/.claude"
-      - "${FOLDERS_APPS}/claude-config.json:/root/.claude.json"
-      - type: bind
-        source: ${FOLDERS_APPS}/claude-config.json
-        target: /root/.claude.json
       # - "${FOLDERS_APPS}/claude-settings.json:/root/.claude/settings.json"
     working_dir: /workspace
     stdin_open: true
