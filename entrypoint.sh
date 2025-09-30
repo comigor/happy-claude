@@ -7,7 +7,7 @@ happy --version
 cd /workspace
 
 if happy auth status | grep -q 'Machine registered'; then
-    happy --yolo
+    happy
 else
     echo "Happy not authenticated. Run "
     echo 'docker compose up -d'
